@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Experience!</title>
+<link rel="stylesheet" type="text/css" href="wondercss.css">
+<script type="text/javascript">
+function emailcheck(ema) {
+return /\S+@\S+\.\S+/.test(ema)
+}
+
+function validation() {
+	var forename = document.forms["Experience"]["forename"].value;
+	if (forename==null || forename=="") {
+	alert("Input forename!");
+	return false;}
+	
+	var surname = document.forms["Experience"]["lastname"].value;
+	if (surname==null || surname=="") {
+	alert("Input surname!");
+	return false;}
+	
+	var email = document.forms["Experience"]["Email"].value;
+	if (email==null || email=="") {
+	alert("Input email!");
+	return false;}
+	
+	if (emailcheck(email)==false) {
+	alert("no");
+	return false;}
+	
+	var wonder = document.forms["Experience"]["wonder"].value;
+	if (wonder==null || wonder=="") {
+	alert("Select a wonder!");
+	return false;}
+	
+	var date = document.forms["Experience"]["Visit"].value;
+	if (date==null || date=="") {
+	alert("Input date!");
+	return false;}
+	
+	var word1 = document.forms["Experience"]["word1"].value;
+	if (word1==null || word1=="") {
+	alert("Input the first word!");
+	return false;}
+	
+	var word2 = document.forms["Experience"]["word2"].value;
+	if (word2==null || word2=="") {
+	alert("Input second word!");
+	return false;}
+	
+	var word3 = document.forms["Experience"]["word3"].value;
+	if (word3==null || word3=="") {
+	alert("Input third word!");
+	return false;}
+	}
+	
+</script>
+</head>
+
+<body>
+<img src="experiences.png" alt="Experiences" class="middle fade-in" style="width:auto;height=800px;">
+
+<form name="Experience" action="Form Output.html" class="fade-in" method="get" autocomplete="off" onsubmit="return validation()">
+
+<table style="width:100%" class="fade-in">
+<tr>
+<th>
+  <p>Please enter your name:</p>
+</th>
+<th>
+  <p>Please select the Wonder:</p>
+  </th>
+  <th>
+  <p>Date of Visit:</p>
+  </th>
+  <th>
+    <p>Write three words to describe your experience:</p>
+	</th>
+</tr>
+
+
+
+<tr style="font-size:70%">
+<th>
+  <label for="forename">First name:</label><br>
+  <input type="text" id="forename" name="forename" value=""><br><br>
+  <label for="lastname">Last name:</label><br>
+  <input type="text" id="lastname" name="lastname" value=""><br><br>
+  <label for="Email">Email:</label><br>
+  <input type="text" id="Email" name="Email" value=""><br><br>
+
+</th>
+<th>
+
+  <input type="radio" id="Mexico" name="wonder" value="Mexico">
+  <label for="Mexico">Chichén Itzá</label><br><br>
+  <input type="radio" id="Peru" name="wonder" value="Peru">
+  <label for="Peru">Machu Picchu</label><br><br>
+  <input type="radio" id="Brazil" name="wonder" value="Brazil">
+  <label for="Brazil">Christ The Redeemer</label><br><br>
+    <input type="radio" id="Italy" name="wonder" value="Italy">
+  <label for="Italy">The Colosseum</label><br><br>
+    <input type="radio" id="Jordon" name="wonder" value="Jordon">
+  <label for="Jordon">Petra</label><br><br>
+    <input type="radio" id="Egypt" name="wonder" value="Egypt">
+  <label for="Egypt">Pyramid of Giza</label><br><br>
+    <input type="radio" id="India" name="wonder" value="India">
+  <label for="India">Taj Mahal</label><br><br>
+  <input type="radio" id="China" name="wonder" value="China">
+  <label for="China">The Great Wall</label><br><br>
+</th>
+</th>
+<th>  
+
+  <input type="date" id="Visit" name="Visit">
+ </th>
+<th>
+
+  <input type="text" id="word1" name="word1" value=""><br><br>
+  <input type="text" id="word2" name="word2" value=""><br><br>
+  <input type="text" id="word3" name="word3" value=""><br><br>
+</tr>
+
+</table> 
+  
+<input type="image" src="submit.png" onmouseover="this.src='submit1.png'" onmouseleave="this.src='submit.png'" style="height:125px;width:auto" class="middle fade-in">
+  </form>
+  <br>
+  <div class="middle fade-in" style="font-size:125%;">
+<a href="Mexico.html" class=trips>Chichén Itzá<br> Mexico</a>
+  <a href="Peru.html" class=trips>Machu Picchu<br> Peru</a>
+  <a href="Brazil.html" class=trips>Christ the Redeemer<br> Brazil</a>
+  <a href="Italy.html" class=trips>The Colosseum<br> Italy</a>
+  <a href="Jordon.html" class=trips>Petra<br> Jordon</a>
+  <a href="Egypt.html" class=trips>Pyramids of Giza<br> Egypt</a>
+  <a href="India.html" class=trips>Taj Mahal<br> India</a>
+  <a href="China.html" class=trips>The Great Wall<br> China</a>
+  <br><br>
+  <a href="7 Wonders.html" class="trips middle" style = "width:95.5%">Return to<br> Map</a>
+</div>
+<br>  
+</body>
+</html>

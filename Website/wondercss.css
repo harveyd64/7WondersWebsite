@@ -1,0 +1,98 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+	color: #ffff00;
+}
+
+table, td, th, p,label {
+	table-layout:fixed;
+	color: #D4AF37;
+	font-size: 125%;
+	padding: 20px;
+	font-family: Century Gothic, Helvetica, Arial, sans-serif;
+}
+
+a.trips:link, a.trips:visited {
+  background-color: black;
+  color: #D4AF37;
+  border: 2px solid;
+  border-color: #D4AF37;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.trips:hover, a.trips:active {
+  background-color: #D4AF37;
+  color: black;
+	}
+
+ body {
+	 background-color: black;
+ }
+ 
+  
+ .middle {
+	 display:block;
+	 margin-left:auto;
+	 margin-right:auto;
+	 width:50%;
+ }
+ 
+ 
+  .fade-in {
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+
